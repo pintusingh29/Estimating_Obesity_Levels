@@ -1,116 +1,106 @@
-# Estimating_Obesity_Levels
-Estimating Obesity Levels Based on Eating Habits and Physical Condition
+📊 Estimation of Obesity Levels Based on Eating Habits and Physical Condition 🍽️
+🏆 Overview
+This project explores the dataset "Estimation of Obesity Levels Based on Eating Habits and Physical Condition" from the UCI Machine Learning Repository. The dataset maps lifestyle, dietary habits, and demographic attributes to predict obesity levels. This classification problem is approached using 🌲 Random Forest and 🧠 Artificial Neural Networks (ANNs) in R, providing insights into their relative performance and effectiveness.
 
-This project deals with the dataset of "Estimation of Obesity Levels Based on Eating Habits and Physical Condition", found in the UCI Machine Learning repository. The dataset very well maps lifestyle, dieting habits, and demographic attributes and can be used to predict obesity levels. The classification problem will use two methods, under supervised learning, in R: Random Forest and Artificial Neural Networks (ANNs). This will showcase their relative merits and demerits. Approval will be or has been sought from the module leader with respect to this dataset. 
+📑 Dataset Description
+The dataset, collected over six to seven years, consists of 2102 instances with 17 attributes, including:
 
-2. Dataset Description
+📌 Predictor Variables: Age, Gender, BMI, Physical Activity Level, Consumption of High-Caloric Food, etc.
 
-The dataset, gathered over the course of the past six or seven years, contains 2102 instances with 17 attributes, among which are:
+🎯 Target Variable: NObesity (categorizing individuals into seven levels of obesity, from Insufficient Weight to Obese Type III).
 
-•	Age, Gender, BMI, Physical Activity Level, Consumption of High Caloric Food
+📊 Data Types: A mixture of numerical and categorical features requiring appropriate preprocessing.
 
-•	Target variable NObesity is the variable that classifies individuals from seven levels of obesity (ranging from Insufficient Weight to Obese Type III).
+🔍 Research Questions
+How accurately can obesity levels be predicted using lifestyle and dietary factors? 🤔
 
-•	It is a mixture of numeric and categorical, therefore, appropriate preprocessing procedures are warranted.
+Which classification method (🌲 Random Forest vs. 🧠 ANN) performs better for this task, and why? 🏆
 
-4. Research Questions
+What are the most significant lifestyle and dietary factors influencing obesity classification? 🍔🥗
 
-•	What is the accuracy of predicting obesity levels with lifestyle and dietary factors?
+🛠️ Methodology
+1️⃣ Data Preprocessing
+🛑 Handling Missing Values: Imputation using mean/median (numerical features) and mode/KNN (categorical features).
 
-•	Which one of the two methods chosen (Random Forest and ANN) works better for this classification task and why?
+🧹 Data Cleaning: Removing duplicates, detecting and handling outliers.
 
-•	Which lifestyle and dietary factors are the most significant in differentiating levels of obesity?
+🔠 Encoding Categorical Variables: One-hot encoding or label encoding as needed.
 
-6. Methodology
+⚖️ Feature Scaling: Standardization (Z-score) or Min-Max scaling.
 
-The analysis will be done using R as follows:
+2️⃣ Exploratory Data Analysis (EDA)
+📊 Descriptive Statistics: Summary statistics and frequency distributions.
 
-4.1 Data Preprocessing
+📈 Visualizations:
 
-•	Dealing with Missing Values: If there are missing values, the suitable imputation methods would be applied (e.g., mean/median for numerical features, mode for categorical features or KNN imputation).
+📉 Histograms & box plots (numerical attributes)
 
-•	Data Cleaning: All duplicates will be deleted, inconsistencies or outliers investigated and dealt with.
+📊 Bar charts (categorical attributes)
 
-•	Encoding Categorical Variables: Apply either one-hot encoding or label encoding where applicable.
+🔥 Correlation heat maps
 
-•	Feature Scaling: Numerical features would need to be standardized (z-score normalization, min-max scaling).
+⭐ Feature importance plots
 
-4.2 Exploratory Data Analysis (EDA)
+⚠️ Class Imbalance Analysis: Using oversampling/undersampling if necessary.
 
-•	Descriptive Statistics: Summary statistics for numerical features and frequency distributions for categorical features.
+3️⃣ Model Building and Evaluation
+🌲 Random Forest
+Implemented via randomForest package.
 
-•	Visualizations:
+🎯 Hyperparameter tuning using cross-validation (number of trees, depth, etc.).
 
-o	Histograms and box plots for numerical attributes
+🧠 Artificial Neural Network (ANN)
+Implemented using keras and tensorflow.
 
-o	Bar charts for categorical features
+Optimized architecture: 🔢 number of layers, neurons, activation functions.
 
-o	Correlation heat maps for numerical features
+📏 Evaluation Metrics
+✅ Accuracy
 
-o	Feature importance plots (after model training)
+📌 Precision, Recall, F1-score (for each class & weighted average)
 
-•	Analysis of Class Imbalance: Techniques like oversampling or undersampling will be adopted if necessary.
+📊 Confusion Matrix
 
-4.3 Model Building and Evaluation
+📈 ROC Curve & AUC (Area Under Curve)
 
-Random Forest
+🔄 Cross-validation (k-fold for robustness)
 
-  •	Applied via randomForest.
+4️⃣ Model Comparison & Selection
+📊 Performance of 🌲 Random Forest and 🧠 ANN will be compared.
 
-  •	Hyperparameter tuning (like number of trees, depth of trees) will be performed via cross-validation.
+🏆 The best-performing model will be selected based on key metrics.
 
-Artificial Neural Network (ANN)
+🔍 Justifications for performance differences will be discussed in detail.
 
-  •	Implemented using keras or tensorflow.
-  
-  •	Architecture (number of layers, neurons per layer, activation function) will be carefully selected and tuned.
+5️⃣ Feature Importance Analysis
+🌲 Random Forest: Built-in feature importance measures.
 
-Evaluation Metrics
+🧠 ANN: Sensitivity analysis (e.g., weight analysis).
 
-  •	Accuracy
-
-  •	Precision, recall, and F1-score (for each class and weighted average)
-  
-  •	Confusion matrix
-  
-  •	ROC curves and AUC (Area Under Curve)
-  
-  •	Cross-validation (k-fold cross-validation for robustness, k-value should be specified)
-
-8. Model Comparison and Selection
-
-  •	The Random Forest and ANN models will be compared based on performance and evaluation metrics. 
-
-  •	The best-performing model (based on justification provided from chosen metrics) will be selected as final. 
-
-  •	The reasons for performance differences will be discussed in detail. 
-
-9. Feature Importance Analysis
-   
-  •	Random Forest: built-in feature importance measures. 
-
-  •	For ANN: sensitivity/weight analysis.
-
-11. Report and Expected Outcomes
-
+🎯 Expected Outcomes
 The final report will include:
-  
-  •	Introduction to the problem and dataset
 
-  •	Methodology (data preprocessing, model building, and evaluation techniques)
-  
-  •	Comprehensive presentation of results (tables, figures, and interpretations)
-  
-  •	Strengths and weaknesses of each model
-  
-  •	Feature importance analysis
-  
-  •	A conclusion of findings and implications
-  
-  •	A properly formatted reference list
+📝 Problem definition and dataset details.
 
-13. Software and Tools
+🔬 Methodology (preprocessing, modeling, evaluation techniques).
 
-  •	R
-  
-  •	R packages: caret, randomForest, keras, tensorflow, ggplot2, dplyr
+📊 Performance comparison of Random Forest and ANN.
+
+📌 Feature importance insights.
+
+🎯 Conclusion on model performance and findings.
+
+🛠️ Tools & Technologies
+💻 Programming Language: R
+
+📚 Libraries Used:
+
+caret, randomForest, keras, tensorflow
+
+ggplot2, dplyr (for visualization & data manipulation)
+
+🙌 Acknowledgment
+The dataset is sourced from the 📂 UCI Machine Learning Repository, and the project is part of coursework for the 🎓 MSc in Data Science program at the 🏫 University of East London.
+
+🔗 Connect & Contribute 🚀
+Feel free to explore, fork, and contribute to the project. Feedback and suggestions are welcome! 💡✨
