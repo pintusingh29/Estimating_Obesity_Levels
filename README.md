@@ -104,3 +104,12 @@ The dataset is sourced from the 📂 UCI Machine Learning Repository, and the pr
 
 🔗 Connect & Contribute 🚀
 Feel free to explore, fork, and contribute to the project. Feedback and suggestions are welcome! 💡✨
+#############################################################################################################################################################################
+
+<img width="638" alt="Bar_plot" src="https://github.com/user-attachments/assets/bdd72811-72ca-4fd6-9314-4727f7eebe2a" />
+
+<img width="713" alt="Pair_plots" src="https://github.com/user-attachments/assets/f713d49e-7608-4418-97ab-7ab824638042" />
+<img width="431" alt="CF_RandomForest" src="https://github.com/user-attachments/assets/3a3b358a-ecf0-49fc-879b-2a388f054126" />
+<img width="431" alt="CF_NeuralNetwork" src="https://github.com/user-attachments/assets/5d628c39-f9d2-43d0-bd74-ab0f0aa3c146" />
+<img width="600" alt="FI_imp_RandomForest" src="https://github.com/user-attachments/assets/ac23b6f5-2910-4150-8105-215a9ad97179" />
+
